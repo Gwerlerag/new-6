@@ -38,7 +38,7 @@ button {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+
 }
 
 link:hover,
@@ -47,9 +47,11 @@ link:focus {
 }
 
 .title {
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
 }
@@ -237,7 +239,9 @@ a:focus {
 
 .core-values-section {
   background-color: #ffffff;
-  padding: 96px 0;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .visually-hidden {
@@ -265,6 +269,10 @@ a:focus {
   flex-wrap: wrap;
 }
 
+.list .item {
+  margin-bottom: 72px;
+}
+
 .core-values-section .item {
   /* width: calc((100% - 72px) / 4); */
   width: 100%;
@@ -274,49 +282,78 @@ a:focus {
 .core-values-section .subtitle {
   text-align: center;
   margin-bottom: 8px;
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 36px;
+line-height: 111%;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--navy-blue);
 }
+
+
 .core-values-section .text {
   text-align: left;
-  margin-bottom: 72px;
 }
 .team-section {
-  padding: 120px 0;
+  padding-top: 96px;
+  padding-bottom: 24px;
+  padding-left: 28px;
+  padding-right: 28px;
   background-color: #f4f4fd;
 }
 .team-section .title {
   margin-bottom: 72px;
 }
 
+img {
+  display: block;
+}
+
 .team-section .list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .team-section .item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+  width: 100%;
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .worker {
-  padding: 32px 0;
+  width: 100%;
+  padding: 32px 16px;
 }
 
 .worker .text {
   margin-bottom: 8px;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--slate);
 }
 .worker .subtitle {
   text-align: center;
   margin-bottom: 8px;
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--navy-blue);
 }
-.worker .text {
-  text-align: center;
-}
+
 .icons {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding: 0 16px;
 }
 .team-icon {
   width: 40px;
@@ -341,23 +378,48 @@ a:focus {
 }
 .portfolio-section {
   background-color: #ffffff;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
+
+.portfolio-section .subtitle{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  text-align: left;
+}
+
 .portfolio-section .title {
   margin-bottom: 72px;
+}
+.portfolio-section .text {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.02em;
+color: var(--slate);
 }
 
 .portfolio-section .list {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
-  row-gap: 48px;
+  flex-direction: column;
 }
 .portfolio-section .item {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio-section .list .item {
+  margin-bottom: 48px;
+}
+
 
 .portfolio-section .item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -706,3 +768,4 @@ a:focus {
   margin: 0 auto;
   border-radius: 4px;
 }
+
